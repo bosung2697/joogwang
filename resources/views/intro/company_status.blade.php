@@ -158,7 +158,7 @@
             <div>
                 <div class="local_or_foreign">국내</div>
                 <div class="p_o_b">
-                    <img size=100 src="/img/no_image.jpg" class="grid-item">
+                    <img size=100 src="/img/intro1.png" class="grid-item">
                     <div class="p_o_b_desc grid-item">
                         <table>
                             <tr>
@@ -175,7 +175,7 @@
                     </div>
                 </div>
                 <div class="p_o_b">
-                    <img src="/img/no_image.jpg" class="grid-item">
+                    <img src="/img/intro2.png" class="grid-item">
                     <div class="p_o_b_desc grid-item">
                         <table>
                             <tr>
@@ -189,7 +189,7 @@
 
                 <div class="local_or_foreign">국외</div>
                 <div class="p_o_b">
-                    <img src="/img/no_image.jpg" class="grid-item">
+                    <img src="/img/intro1.png" class="grid-item">
                     <div class="p_o_b_desc grid-item">
                         <table>
                             <tr>

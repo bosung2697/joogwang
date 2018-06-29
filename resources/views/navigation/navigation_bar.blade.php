@@ -56,7 +56,7 @@
             <div>
                 연구개발(연구소)
             </div>
-            <div>
+            <div onclick="location.href='{{url('/productprocess')}}'">
                 생산공정
             </div>
             <div onclick="location.href='{{url('/equipment')}}'">
