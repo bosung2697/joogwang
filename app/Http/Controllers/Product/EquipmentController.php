@@ -9,11 +9,11 @@ use Illuminate\Http\Request;
 class EquipmentController extends Controller
 {
     public function index(){
-        $data=Equipment::latest()->paginate(10);
+//        $data=Equipment::latest()->paginate(10);
         return view('Product.equipment.index', compact('data'));
     }
     public function show(){
-        $data=Equipment::latest()->get();
+//        $data=Equipment::latest()->get();
         return view('Product.equipment.show', compact('data'));
     }
 //    public function show(Request $request, $id){

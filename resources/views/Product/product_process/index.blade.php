@@ -34,8 +34,8 @@
             <div class="header">생산공정</div>
         </div>
         <div style="width:100%; text-align:center;">
-            <div style="width:100%; margin-bottom:8vh;"><img src="/img/product_process1.jpg" width="100%"></div>
-            <div style="width:100%;"><img src="/img/product_process2.jpg" width="80%"></div>
+            <div style="width:100%; margin-bottom:8vh;"><img src="/img/product_process1.JPG" width="100%"></div>
+            <div style="width:100%;"><img src="/img/product_process2.JPG" width="80%"></div>
         </div>
     </div>
 @endsection
