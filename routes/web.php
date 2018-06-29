@@ -19,7 +19,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 ///----------------------------------------ABOUTUS-------------------------------------------///
 Route::get('/intro', 'AboutUs\IntroController@index');
 Route::get('/company_status', 'AboutUs\CompanyStatusController@index');
-Route::get('/awards',h 'AboutUs\AwardsController@index');
+Route::get('/awards', 'AboutUs\AwardsController@index');
 
 ///----------------------------------------PR-------------------------------------------///
 Route::get('/newsroom', 'PR\NewsRoomController@index');
