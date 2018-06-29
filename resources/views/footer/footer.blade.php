@@ -1,20 +1,20 @@
 <div class="footer">
     <div class="footer_child" style="border-bottom: 0.2px solid white;">
-        <div class="grid-item">About Us</div>
+        <div class="grid-item" style="cursor:pointer;" onclick="location.href='{{url('/intro')}}'">About Us</div>
         <div class="grid-item">Product</div>
         <div class="grid-item">Career</div>
-        <div class="grid-item">PR</div>
+        <div class="grid-item" onclick="location.href='{{url('/newsroom')}}'">PR</div>
         <div class="grid-item">CSR</div>
     </div>
     <div class="footer_child">
-        <div class="grid-item">ceo 인사말</div>
+        <div class="grid-item" style="cursor:pointer;" onclick="location.href='{{url('/intro')}}'">ceo 인사말</div>
         <div class="grid-item">제품소개</div>
         <div class="grid-item">인재상</div>
-        <div class="grid-item">뉴스룸</div>
+        <div class="grid-item" style="cursor:pointer;" onclick="location.href='{{url('/newsroom')}}'">뉴스룸</div>
         <div class="grid-item">나눔경영</div>
     </div>
     <div class="footer_child">
-        <div class="grid-item">기업현황</div>
+        <div class="grid-item" style="cursor:pointer;" onclick="location.href='{{url('/company_status')}}'">기업현황</div>
         <div class="grid-item">연구개발(연구소)</div>
         <div class="grid-item">인사제도</div>
         <div class="grid-item">Library</div>
@@ -29,7 +29,7 @@
     </div>
     <div class="footer_child">
         <div class="grid-item">회사연혁</div>
-        <div class="grid-item">보유장비</div>
+        <div class="grid-item" style="cursor:pointer;" onclick="location.href='{{url('/equipment')}}'">보유장비</div>
         <div class="grid-item">채용공고</div>
         <div class="grid-item">문의상담</div>
         <div class="grid-item">환경안전보건경영</div>
