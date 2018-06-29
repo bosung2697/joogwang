@@ -33,13 +33,13 @@
             <div onclick="location.href='{{url('/company_status')}}'">
                 기업현황
             </div>
-            <div>
+            <div  onclick="location.href='{{url('/tob')}}'">
                 조직도
             </div>
-            <div>
+            <div onclick="location.href='{{url('/companyhistory')}}'">
                 회사연혁
             </div>
-            <div>
+            <div onclick="location.href='{{url('/awards')}}'">
                 수상실적
             </div>
             <div>
@@ -50,10 +50,10 @@
             </div>
         </div>
         <div id="Product" class="submenu" style="text-align: center;">
-            <div>
+            <div onclick="location.href='{{url('/product_intro')}}'">
                 제품소개
             </div>
-            <div>
+            <div onclick="location.href='{{url('/RandD')}}'">
                 연구개발(연구소)
             </div>
             <div onclick="location.href='{{url('/productprocess')}}'">

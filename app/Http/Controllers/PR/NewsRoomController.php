@@ -13,10 +13,11 @@ class NewsRoomController extends Controller
         return view('PR.newsroom.index', compact('data'));
     }
     public function show(Request $request, $id){
-
-        $data = NewsRoom::where('id', $id)->first();
-        $previous = NewsRoom::where('id', '<', $data->id)->max('id');
-        $next = NewsRoom::where('id', '>', $data->id)->min('id');
-        return view('PR.newsroom.show', compact('data', 'previous', 'next'));
+//
+//        $data = NewsRoom::where('id', $id)->first();
+//        $previous = NewsRoom::where('id', '<', $data->id)->max('id');
+//        $next = NewsRoom::where('id', '>', $data->id)->min('id');
+//        return view('PR.newsroom.show', compact('data', 'previous', 'next'));
+        return view('PR.newsroom.show');
     }
 }

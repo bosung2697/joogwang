@@ -28,7 +28,7 @@
     </style>
     <div class="container">
         <div class="ceoheader">
-            <div><a href={{url('/')}}>Home</a>><a href="{{url('#')}}">Product</a>>
+            <div><a href={{url('/')}}>Home</a>><a href="{{url('/product_intro')}}">Product</a>>
                 <a href="{{url('/productprocess')}}">생산공정</a></div>
             <hr width="5%;" align="left" ; style="border:thin solid #667ebc; margin-bottom: 0;">
             <div class="header">생산공정</div>

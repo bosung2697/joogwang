@@ -134,10 +134,9 @@
             <hr width="5%;" align="left"; style="border:thin solid #667ebc; margin-bottom: 0;">
             <div class="header">보유장비</div>
         </div>
-        <div style="text-align:right; text-align:-moz-right; font-size:1vw; font-weight:700; vertical-align: middle;"
-             onclick="location.href='{{url('/equipment_all')}}'">
-            <div style="cursor:pointer; margin:auto; padding:0;margin: 4vh 1vw"><b
-                        style="vertical-align:middle; font-size:2vw;  font-weight:700;">+</b> 전체보기
+        <div style="cursor:pointer; text-align:right; text-align:-moz-right; font-size:1vw; font-weight:700; vertical-align: middle;"
+             onclick="location.href='#'">
+            <div style="cursor:pointer; padding:0;margin: 4vh 1vw"><b style="vertical-align:middle; font-size:2vw;  font-weight:700;">+</b> 전체보기
             </div>
         </div>
         <div class="showequipment">

@@ -23,19 +23,16 @@
             text-align: right;
         }
 
-
-
     </style>
     <div class="container">
         <div class="ceoheader">
-            <div><a href={{url('/')}}>Home</a>><a href="{{url('/newsroom')}}">PR</a>>
-                <a href="{{url('/RandD')}}">뉴스룸</a></div>
+            <div><a href={{url('/')}}>Home</a>><a href="{{url('/product_intro')}}">Product</a>>
+                <a href="{{url('/product_intro')}}">제품소개</a></div>
             <hr width="5%;" align="left" ; style="border:thin solid #667ebc; margin-bottom: 0;">
-            <div class="header">뉴스룸</div>
+            <div class="header">제품소개</div>
         </div>
         <div style="width:100%; text-align:center;">
-            <div style="width:100%; margin:8vh;"><img src="/img/newsroomdetailed.PNG" width="100%"></div>
-
+            <div style="width:100%; margin-bottom:8vh;"><img src="/img/product_intro.PNG" width="100%"></div>
         </div>
     </div>
 @endsection

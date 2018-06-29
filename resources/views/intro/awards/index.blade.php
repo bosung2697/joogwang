@@ -22,80 +22,109 @@
             cursor: pointer;
             text-align: right;
         }
-
-        .pagecontents{
-            font-size:1vw;
-            color:black;
-            border-collapse: collapse;
-            border-bottom: 1px solid;
-            width:80%;
+        .awarded_list{
+            width:100%;
+            display: -ms-grid;
+            display:grid;
+            grid-column-gap: 0;
+            -ms-grid-columns: 1fr 1vw 1fr 1vw 1fr 1vw 1fr;
+            grid-template-columns: 25% 25% 25% 25%;
+            text-align:center;
             margin:auto;
         }
-        .pagecontents th, .pagecontents td{
-            padding:0.5vw;
+        .awarded_list>.grid-item{
+
+            margin-bottom: 8vh;
         }
-        .pagecontents th{
-            text-align:center;
+        .awarded_list>.grid-item:nth-child(2),.awarded_list>.grid-item:nth-child(3),.awarded_list>.grid-item:nth-child(4),.awarded_list>.grid-item:nth-child(6),.awarded_list>.grid-item:nth-child(7),.awarded_list>.grid-item:nth-child(8){
+            border-left:1px dashed;
         }
-        .table_title{
-            background-color: #eef1f8;
-            border: 1px solid;
-            width:80%;
+        .awarded_list>.grid-item>div>.date{
+            font-size:1.2vw;
+            font-weight:700;
+            text-align:left;
+            padding: 0.5vw 0.5vw 0 0.5vw;
         }
-        .table_id{
-            width:7%;
+        .awarded_list>.grid-item>div{
+            padding-left:5.5vw;
         }
-        .table_date{
-            width:13%;
-        }
-        .tothedetailpage{
-            background-color:white;
+        .awarded_list>.grid-item>div>.title{
             font-size:1vw;
-            color:black;
+            text-align:left;
+            font-weight:lighter;
+            padding: 0 0.5vw 0 0.5vw;
+        }
+        .awarded_list>.grid-item>img{
+            width: 9vw;
+            height: 25vh;
         }
     </style>
 
     <div class="container">
         <div class="ceoheader">
-            <div><a href={{url('/')}}>Home</a>><a href="{{url('/newsroom')}}">PR</a>><a
-                        href="{{url('/newsroom')}}">뉴스룸</a></div>
+            <div><a href={{url('/')}}>Home</a>><a href="{{url('/intro')}}">About Us</a>><a
+                        href="{{url('/awards')}}">수상실적</a></div>
             <hr width="5%;" align="left"; style="border:thin solid #667ebc; margin-bottom: 0;">
-            <div class="header">뉴스룸</div>
+            <div class="header">수상실적</div>
         </div>
-        <div>
-            <table class="pagecontents">
-                <thead>
-                <tr style="border-top: 1px solid; border-bottom: 1px solid;">
-                    <th class="table_id">번호</th>
-                    <th class="table_title">제목</th>
-                    <th class="table_date">날짜</th>
-                </tr>
-                </thead>
-                @forelse($data as $value)
-                    <tr class="tothedetailpage" onclick="show({{$value->id}})">
-                        <td class="td1">{{$value->id}}</td>
-                        <td class="td1" style="border-left:1px solid; border-right:1px solid;">{{$value->title}}</td>
-                        <td class="td1">{{$value->created_at}}</td>
-                    </tr>
-                @empty
-                    <tr>
-                    <td colspan="3">등록된 공지사항이 없습니다.</td>
-                    </tr>
-                @endforelse
-            </table>
-            <div style="margin-top:10vh;">
-                @if($data->count())
-                    <div class="text-center" style="margin:auto;">
-                        {!! $data->render() !!}
-                    </div>
-                @endif
+        <div class="awarded_list">
+            <div class="grid-item">
+                <img src="/img/reward1.png">
+                <div>
+                    <div class="date">2016</div>
+                    <div class="title">53회 무역의 날 천만 불 수출의 탑</div>
+                </div>
             </div>
+            <div class="grid-item">
+                <img src="/img/reward2.png">
+                <div>
+                    <div class="date">2014</div>
+                    <div class="title">강소기업 확인서</div>
+                </div>
+            </div><div class="grid-item">
+                <img src="/img/reward1.png">
+                <div>
+                    <div class="date">2016</div>
+                    <div class="title">53회 무역의 날 천만 불 수출의 탑</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="/img/reward2.png">
+                <div>
+                    <div class="date">2014</div>
+                    <div class="title">강소기업 확인서</div>
+                </div>
+            </div><div class="grid-item">
+                <img src="/img/reward1.png">
+                <div>
+                    <div class="date">2016</div>
+                    <div class="title">53회 무역의 날 천만 불 수출의 탑</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="/img/reward2.png">
+                <div>
+                    <div class="date">2014</div>
+                    <div class="title">강소기업 확인서</div>
+                </div>
+            </div><div class="grid-item">
+                <img src="/img/reward1.png">
+                <div>
+                    <div class="date">2016</div>
+                    <div class="title">53회 무역의 날 천만 불 수출의 탑</div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="/img/reward2.png">
+                <div>
+                    <div class="date">2014</div>
+                    <div class="title">강소기업 확인서</div>
+                </div>
+            </div>
+
+        </div>
+        <div style="text-align:center;">
+            <img src="/img/page_render.PNG" width="40%;" align="center;">
         </div>
     </div>
-    <script>
-        function show(id) {
-            location.href = "/newsroom/" + id;
-        }
-    </script>
-
 @endsection
