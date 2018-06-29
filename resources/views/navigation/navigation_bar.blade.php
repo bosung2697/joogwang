@@ -30,7 +30,7 @@
             <div onclick="location.href='{{url('/intro')}}'">
                 CEO인사말
             </div>
-            <div>
+            <div onclick="location.href='{{url('/company_status')}}'">
                 기업현황
             </div>
             <div>
@@ -59,7 +59,7 @@
             <div>
                 생산공정
             </div>
-            <div>
+            <div onclick="location.href='{{url('/equipment')}}'">
                 보유장비
             </div>
             <div>
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div id="PR" class="submenu" style="text-align:right; padding-right:3vw;">
-            <div>
+            <div onclick="location.href='{{url('/newsroom')}}'">
                 뉴스룸
             </div>
             <div>

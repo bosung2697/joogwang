@@ -56,20 +56,20 @@
 @section('content')
     <div class="maincontainer">
         <div>
-            <img class="mainimage" src="http://127.0.0.1:8000/img/no_image.jpg"/>
+            <img class="mainimage" src="/img/main.png"/>
         </div>
         <div class="mainpage_list">
             <div class="listname" style="font-size: 2.5vw;font-weight: 900;">
                 CSR
             </div>
-            <img src="http://127.0.0.1:8000/img/no_image.jpg"/>
-            <img src="http://127.0.0.1:8000/img/no_image.jpg"/>
-            <img src="http://127.0.0.1:8000/img/no_image.jpg"/>
-            <img src="http://127.0.0.1:8000/img/no_image.jpg"/>
+            <img src="/img/main_s.png"/>
+            <img src="/img/main_s.png"/>
+            <img src="/img/main_s.png"/>
+            <img src="/img/main_s.png"/>
             <div class="listname" style="font-size:2.3vw; font-weight:600;">
                 Reward
             </div>
-            <img src="http://127.0.0.1:8000/img/no_image.jpg"/>
+            <img src="/img/no_image.jpg"/>
         </div>
         <div class="noticelist">
             <div class="grid-item">
@@ -78,7 +78,7 @@
                     <b style="font-size:1.1vw; color:grey;">+더보기</b>
                 </div>
                 <div style="height:25vh; margin:1vw;">
-                    <img src="http://127.0.0.1:8000/img/no_image.jpg" style=" width: 18vw;height:23vh;float: left;">
+                    <img src="/img/videoplay.png" style="background-color: black; width: 18vw;height:23vh;float: left;">
                     <p style="padding:0 1vw; float: left; text-align: left;">
                         <b style="font-size:1.2vw; color:black; font-weight:700;">
                             흑연 금형가공기술 최강자

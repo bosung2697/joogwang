@@ -1,19 +1,39 @@
 <style>
     /*********************** Navigation Bar***************************/
+    @media (min-width: 576px) {
+        .container {
+            width: auto;
+            max-width:100%;
+        }
+    }
+
+    @media ( min-width: 1200px ) {
+        .container {
+            max-width:100%;
+        }
+    }
+
     html {
         width: 100%;
         height: 100%;
     }
 
     body {
+        background-color:white;
         margin: 3vw;
-        padding:0;
-        height:100%;
+        padding: 0;
+        height: 100%;
     }
 
     .navbarheadertop {
         display: flex;
         float: right;
+    }
+    .ceoheader .header {
+        font-size: 1.6vw;
+        font-weight: 500;
+        color: #000000;
+        text-align: left;
     }
 
     .navbarheadertop > div {
@@ -71,7 +91,7 @@
     #wrapper {
         /*position: relative;*/
         min-height: 100%;
-        height:100%;
+        height: 100%;
     }
 
     /*********************** Navigation Bar***************************/
@@ -81,7 +101,7 @@
         width: 100%;
         /*position: absolute;*/
         bottom: 0;
-        margin-top: 2vh;
+        margin-top: 10vh;
     }
 
     .footer > div {
@@ -120,5 +140,11 @@
 
     .grid-item:nth-child(5) {
         -ms-grid-column: 9;
+    }
+
+    .container {
+        margin: 2vh 1vw;
+        width: auto;
+        background-color:white;
     }
 </style>

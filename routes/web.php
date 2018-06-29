@@ -15,4 +15,16 @@ Route::get('/', function () {
     return redirect('/home');
 });
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/intro', 'IntroController@index');
+
+///----------------------------------------ABOUTUS-------------------------------------------///
+Route::get('/intro', 'AboutUs\IntroController@index');
+Route::get('/company_status', 'AboutUs\CompanyStatusController@index');
+
+///----------------------------------------PR-------------------------------------------///
+Route::get('/newsroom', 'PR\NewsRoomController@index');
+Route::get('/newsroom/{id}', 'PR\NewsRoomController@show');
+
+///----------------------------------------PRODUCT-------------------------------------------///
+Route::get('/equipment', 'Product\EquipmentController@index');
+Route::get('/equipment_all', 'Product\EquipmentController@show');
+Route::get('/productprocess', 'Product\ProductProcessController@index');
