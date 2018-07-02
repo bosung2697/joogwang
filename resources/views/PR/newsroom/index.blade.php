@@ -2,7 +2,7 @@
 @section('content')
     <style>
         .ceoheader {
-            margin: 4vh 1vw;
+            margin: 4vh 0;
         }
 
         .ceoheader > div {
@@ -27,26 +27,26 @@
             font-size:1vw;
             color:black;
             border-collapse: collapse;
-            border-bottom: 1px solid;
-            width:80%;
+            border-bottom: 0.5px solid;
+            width:90%;
             margin:auto;
         }
         .pagecontents th, .pagecontents td{
-            padding:0.5vw;
+            padding:1vw;
         }
         .pagecontents th{
             text-align:center;
         }
         .table_title{
             background-color: #eef1f8;
-            border: 1px solid;
-            width:80%;
+            border: 0.5px solid;
+            width:83%;
         }
         .table_id{
-            width:7%;
+            width:6%;
         }
         .table_date{
-            width:13%;
+            width:11%;
         }
         .tothedetailpage{
             background-color:white;
@@ -59,13 +59,13 @@
         <div class="ceoheader">
             <div><a href={{url('/')}}>Home</a>><a href="{{url('/newsroom')}}">PR</a>><a
                         href="{{url('/newsroom')}}">뉴스룸</a></div>
-            <hr width="5%;" align="left"; style="border:thin solid #667ebc; margin-bottom: 0;">
+            <hr width="3.6%;" align="left"; style="border:thin solid #667ebc; margin: 0;">
             <div class="header">뉴스룸</div>
         </div>
         <div>
             <table class="pagecontents">
                 <thead>
-                <tr style="border-top: 1px solid; border-bottom: 1px solid;">
+                <tr style="border-top: 0.5px solid; border-bottom: 0.5px solid;">
                     <th class="table_id">번호</th>
                     <th class="table_title">제목</th>
                     <th class="table_date">날짜</th>

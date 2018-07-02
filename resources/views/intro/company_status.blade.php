@@ -1,9 +1,14 @@
 @extends('layouts.app')
 @section('content')
     <style>
+        .p_o_b_desc>table>tbody>tr>td>p{
+            margin:0;
+            font-size:1vw;
+            font-weight:600;
+        }
 
         .ceoheader {
-            margin: 4vh 1vw;
+            margin: 4vh 0;
         }
 
         .ceoheader > div {
@@ -55,7 +60,7 @@
             background-color: #fcefec;
             font-weight: 700;
             color: black;
-            width: 23%;
+            width: 19%;
             font-size: 1.5vw;
         }
 
@@ -85,7 +90,7 @@
             grid-column-gap: 0;
             -ms-grid-columns: 1fr 1vw 1fr;
             grid-template-columns: 50% 50%;
-            padding: 10px;
+            padding-top: 10px;
         }
 
         .p_o_b img {
@@ -104,14 +109,21 @@
         .p_o_b_desc td {
             padding: 1vw;
         }
-
+        .business_location_name{
+            vertical-align: top;
+            font-weight:800;
+            font-size:1vw;
+        }
+        .company_intro>div>table>tbody>tr>td{
+            font-size:1vw;
+        }
 
     </style>
     <div class="container">
         <div class="ceoheader">
             <div><a href={{url('/')}}>Home</a>><a href="{{url('/intro')}}">About Us</a>><a
                         href="{{url('/company_status')}}">기업현황</a></div>
-            <hr width="5%;" align="left"; style="border:thin solid #667ebc; margin-bottom: 0;">
+            <hr width="5%;" align="left"; style="border:thin solid #667ebc; margin: 0;">
             <div class="header">기업현황</div>
         </div>
         <div class="company_intro">
@@ -162,12 +174,12 @@
                     <div class="p_o_b_desc grid-item">
                         <table>
                             <tr>
-                                <td style="vertical-align: top;">구미 사업장(본사)</td>
+                                <td class="business_location_name">구미 사업장(본사)</td>
                                 <td><p>경북 구미시 1공단로 10길 55 (공단동)</p>
                                     <p>TEL : 054-461-3732 FAX : 054-461-3735</p></td>
                             </tr>
                             <tr>
-                                <td style="vertical-align: top;">구미 사업장(2공장)</td>
+                                <td class="business_location_name">구미 사업장(2공장)</td>
                                 <td><p>경북 구미시 1공단로 7길 36-13 (공단동)</p>
                                     <p>TEL : 054-465-3763 FAX : 054-465-3764</p></td>
                             </tr>
@@ -179,8 +191,8 @@
                     <div class="p_o_b_desc grid-item">
                         <table>
                             <tr>
-                                <td style="vertical-align:top;">광주 사업장</td>
-                                <td><p>광주광역시 북구 첨단연신로 70 (연제동)</p>
+                                <td class="business_location_name">광주 사업장</td>
+                                <td style="padding-left: 4.1vw;"><p>광주광역시 북구 첨단연신로 70 (연제동)</p>
                                     <p>TEL : 062-972-3731 FAX : 062-972-3730</p></td>
                             </tr>
                         </table>
@@ -193,8 +205,8 @@
                     <div class="p_o_b_desc grid-item">
                         <table>
                             <tr>
-                                <td style="vertical-align: top;">베트남 현지법인</td>
-                                <td><p>Plot CN8-1, Diem Thuy Industrial Zone,</p>
+                                <td class="business_location_name">베트남 현지법인</td>
+                                <td style="padding-left:2.5vw;"><p>Plot CN8-1, Diem Thuy Industrial Zone,</p>
                                     <p>Diem Thuy commune, Phu Binh district</p>
                                     <p>Thai Nguyen province Viet Nam</p>
                                     <p>TEL : 0280-3931-732 FAX : 0280-3931-735</p>
