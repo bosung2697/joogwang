@@ -52,6 +52,24 @@ class Admin extends Authenticatable
     {
         return ($this-> id === 3|| $this->id === 4) ? true : false;
     }
+    public function awards()
+    {
+        return $this->hasmany(Awards::class);
+    }
+    public function equipment()
+    {
+        return $this->hasmany(Equipment::class);
+    }
+    public function newsroom()
+    {
+        return $this->hasmany(NewsRoom::class);
+    }
+    public function productintro()
+    {
+        return $this->hasmany(ProductIntro::class);
+    }
+
+
 
 
     /**

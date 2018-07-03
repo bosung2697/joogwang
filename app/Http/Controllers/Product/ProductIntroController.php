@@ -9,6 +9,6 @@ class ProductIntroController extends Controller
 {
     public function index(){
 
-        return view('Product.productintro.index', compact('data'));
+        return view('user.Product.productintro.index', compact('data'));
     }
 }

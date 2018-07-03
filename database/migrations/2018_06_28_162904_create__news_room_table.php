@@ -13,11 +13,11 @@ class CreateNewsRoomTable extends Migration
      */
     public function up()
     {
-        Schema::create('NewsRoom', function (Blueprint $table) {
+        Schema::create('newsroom', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->text('content');
-            $table->string('fileimage');
+            $table->string('fileimage')->nullable();
             $table->timestamps();
         });
     }

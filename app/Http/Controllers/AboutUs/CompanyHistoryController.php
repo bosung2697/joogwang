@@ -10,6 +10,6 @@ class CompanyHistoryController extends Controller
     public function index()
     {
 
-        return view('intro.companyhistory.index', compact('data'));
+        return view('user.intro.companyhistory.index', compact('data'));
     }
 }

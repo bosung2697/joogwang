@@ -14,8 +14,8 @@
         }
     </style>
     <div class="askingpage">
-        <div style="display:flex; justify-content: space-between; align-items: center;"><h3>공지사항 목록</h3>
-            <div style="cursor:pointer; border:2px solid #e85254; background-color: #e85254; color:white; padding:0.5vw; font-size:1vw; -webkit-border-radius: 1vw;-moz-border-radius: 1vw;border-radius: 1vw;"onclick="location.href='{{url('/admin/newsroom/create')}}'">공지사항 추가</div></div>
+        <div style="display:flex; justify-content: space-between; align-items: center;"><h3>뉴스룸 목록</h3>
+            <div style="cursor:pointer; border:2px solid #e85254; background-color: #e85254; color:white; padding:0.5vw; font-size:1vw; -webkit-border-radius: 1vw;-moz-border-radius: 1vw;border-radius: 1vw;"onclick="location.href='{{url('/admin/newsroom/create')}}'">뉴스룸 추가</div></div>
         <hr/>
         <div>
             <table class="pagecontents">
@@ -23,9 +23,9 @@
                 <tr>
                     <th class="th1 table_id"></th>
                     <th class="th1 table_title">제목</th>
-                    <th class="th2 table_date">공지 내용</th>
-                    <th class="th2 table_date">공지 생성일</th>
-                    <th class="th2 table_date">공지 수정일</th>
+                    <th class="th2 table_date">뉴스룸 내용</th>
+                    <th class="th2 table_date">뉴스룸 생성일</th>
+                    <th class="th2 table_date">뉴스룸 수정일</th>
                     <th class="th2"></th>
                 </tr>
                 </thead>

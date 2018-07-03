@@ -1,12 +1,12 @@
-@extends('layouts.admin')
+@extends('auth.admin.admin')
 @section('content')
     <style>
-        #fyi td {
+        #newsroom td {
             padding: 15px;
             padding-right: 20px;
         }
 
-        #fyi input {
+        #newsroom input {
             overflow-x: auto;
             -ms-overflow-x: auto;
             overflow-y: auto;
@@ -26,53 +26,53 @@
             text-align: left;
         }
     </style>
-    <div id="fyi" class="infoput">
+    <div id="newsroom" class="infoput">
         <div class="container" style="margin: 0 5%;">
-            <h1 class="infoputheader"><strong>※ 공지 수정</strong></h1>
-            <form id="fyi-form" method="POST" action="{{ route('admin.fyi.update', $data->fyi_id) }}"
+            <h1 class="infoputheader"><strong>※ 뉴스룸 수정</strong></h1>
+            <form id="newsroom-form" method="POST" action="{{ route('admin.newsroom.update', $data->id) }}"
                   enctype="multipart/form-data">
                 {!! method_field('PUT') !!}
                 {!! csrf_field() !!}
                 <div class="row">
                     <table>
                         <tr>
-                            <td class="datainput"><label for="fyi_title">제목</label></td>
+                            <td class="datainput"><label for="title">제목</label></td>
                             <td>
-                                <input type="text" id="fyi_title" name="fyi_title" class="form-control"
-                                       placeholder="제목을 입력해주세요." size="68" value="{{old('fyi_title', $data->fyi_title)}}">
-                                @if ($errors->has('fyi_title'))
+                                <input type="text" id="title" name="title" class="form-control"
+                                       placeholder="제목을 입력해주세요." size="68" value="{{old('title', $data->title)}}">
+                                @if ($errors->has('title'))
                                     <div class="help-block">
-                                        {{ $errors->first('fyi_title') }}
+                                        {{ $errors->first('title') }}
                                     </div>
                                 @endif
                             </td>
                         </tr>
                         <tr>
-                            <td class="datainput"><label for="fyi_content">공지 내용</label></td>
+                            <td class="datainput"><label for="content">뉴스룸 내용</label></td>
                             <td>
-                                <textarea id="fyi_content" class="form-control" name="fyi_content" cols="70" placeholder="공지 내용을 입력해주세요.">{{ old('fyi_content',$data->fyi_content)}}</textarea>
-                                @if ($errors->has('fyi_content'))
+                                <textarea id="content" class="form-control" name="content" cols="70" placeholder="뉴스룸 내용을 입력해주세요.">{{ old('content',$data->content)}}</textarea>
+                                @if ($errors->has('content'))
                                     <div class="help-block">
-                                        {{ $errors->first('fyi_content') }}
+                                        {{ $errors->first('content') }}
                                     </div>
                                 @endif
                             </td>
                         </tr>
                         <tr>
-                            <td class="datainput"><label for="fyi_fileimage">파일 첨부</label></td>
+                            <td class="datainput"><label for="fileimage">파일 첨부</label></td>
                             <td>
-                                <input type="file" id="fyi_fileimage" name="fyi_fileimage" class="image"
-                                       value="{{ old('fyi_fileimage',$data->fyi_fileimage) }}">
-                                @if ($errors->has('fyi_fileimage'))
+                                <input type="file" id="fileimage" name="fileimage" class="image"
+                                       value="{{ old('fileimage',$data->fileimage) }}">
+                                @if ($errors->has('fileimage'))
                                     <div class="help-block">
-                                        {{ $errors->first('fyi_fileimage') }}
+                                        {{ $errors->first('fileimage') }}
                                     </div>
                                 @endif
                             </td>
                         </tr>
                         <tr>
                             <td class="savebutton" colspan="2">
-                                <button type="submit" form="fyi-form" class="btn btn-success">
+                                <button type="submit" form="newsroom-form" class="btn btn-success">
                                     저장하기
                                 </button>
                             </td>

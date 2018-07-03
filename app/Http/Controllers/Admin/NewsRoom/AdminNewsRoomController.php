@@ -83,11 +83,13 @@ class AdminNewsRoomController extends Controller
             $file = null;
         }
 
+        $date=Carbon::now();
         $data = NewsRoom::where('id', $id)
             ->update([
                 'title' => $request['title'],
                 'content' => $request['content'],
                 'fileimage' => $file,
+                'date' => $date,
 
             ]);
 
@@ -136,7 +138,7 @@ class AdminNewsRoomController extends Controller
 
         $upload->title = $request['title'];
         $upload->content = $request['content'];
-        $upload->updated_at=$date;
+        $upload->date=$date;
 
 
         $upload->save();

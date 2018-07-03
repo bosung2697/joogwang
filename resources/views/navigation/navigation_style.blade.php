@@ -145,6 +145,6 @@
     .container {
         margin: 2vh 1vw;
         width: auto;
-        background-color:white;
+        background-color: #ffffff!important;
     }
 </style>

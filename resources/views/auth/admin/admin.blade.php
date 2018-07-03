@@ -26,46 +26,27 @@
         </div>
     </div>
     <div class="navsubbar">
-        <div class="grid-item basicinfo-selector {{ $_SERVER['REQUEST_URI'] === '/admin/basic' ? 'active' : ''}}" style="-ms-grid-column: 1"
-        onclick="location.href='/admin/basic';">기초정보
+        <div class="grid-item  aboutus-selector {{ $_SERVER['REQUEST_URI'] === '/admin/awards' ? 'active' : ''}}"
+             style="-ms-grid-column: 3"
+             onclick="location.href='/admin/awards';">About Us
         </div>
-        {{--<div class="grid-item  userinfo-selector {{ $_SERVER['REQUEST_URI'] === '/admin/user' ? 'active' : ''}}" style="-ms-grid-column: 3"--}}
-             {{--onclick="location.href='/admin/user';">회원정보--}}
-        {{--</div>--}}
-        {{--<div class="grid-item developmentinfo-selector {{ $_SERVER['REQUEST_URI'] === '/admin/dev' ? 'active' : ''}}"--}}
-             {{--onclick="location.href='/admin/dev';" style="-ms-grid-column: 5">개발사업정보--}}
-        {{--</div>--}}
-        {{--<div class="grid-item  judicialinfo-selector {{ $_SERVER['REQUEST_URI'] === '/admin/judicial' || $_SERVER['REQUEST_URI'] === '/admin/hotfocus'--}}
-        {{--||$_SERVER['REQUEST_URI'] === '/admin/policy'||$_SERVER['REQUEST_URI'] === '/admin/relatednews' ? 'active' : ''}}"--}}
-             {{--onclick="location.href='/admin/judicial';" style="-ms-grid-column: 7">유권해석&판례--}}
-        {{--</div>--}}
-        {{--<div class="grid-item  noticeinfo-selector {{ $_SERVER['REQUEST_URI'] === '/admin/notice'||$_SERVER['REQUEST_URI']==='admin/fyi'|| $_SERVER['REQUEST_URI']==='admin/consulting' ? 'active' : ''}}"--}}
-             {{--onclick="location.href='/admin/notice';" style="-ms-grid-column: 9">공고/공시--}}
-        {{--</div>--}}
-        {{--<div class="grid-item  libraryinfo-selector {{ $_SERVER['REQUEST_URI'] === '/admin/library' ? 'active' : ''}}"--}}
-             {{--onclick="location.href='/admin/library';" style="-ms-grid-column: 11">자료실--}}
-        {{--</div>--}}
-        {{--<div class="grid-item communityinfo-selector {{ preg_match('/\/admin\/community.+/' , $_SERVER['REQUEST_URI']) || preg_match('/\/admin\/basic.+/', $_SERVER['REQUEST_URI']) || preg_match('/\/admin\/report.+/', $_SERVER['REQUEST_URI']) ? 'active' : ''}}"--}}
-             {{--onclick="location.href='/admin/community/';"style="-ms-grid-column: 13">커뮤니티--}}
-        {{--</div>--}}
+        <div class="grid-item newsroom-selector {{ $_SERVER['REQUEST_URI'] === '/admin/newsroom' ? 'active' : ''}}"
+             style="-ms-grid-column: 1"
+             onclick="location.href='/admin/newsroom';">PR
+        </div>
+        <div class="grid-item product-selector {{ $_SERVER['REQUEST_URI'] === '/admin/productintro' ? 'active' : ''}}"
+             onclick="location.href='/admin/productintro';" style="-ms-grid-column: 5">Product
+        </div>
     </div>
 
     <div class="navlayout">
         <div class="grid-item">
-            {{--@component('components.admin.basicinfo')--}}
-            {{--@endcomponent--}}
-            {{--@component('components.admin.userinfo')--}}
-            {{--@endcomponent--}}
-            {{--@component('components.admin.developmentinfo')--}}
-            {{--@endcomponent--}}
-            {{--@component('components.admin.judicialinfo')--}}
-            {{--@endcomponent--}}
-            {{--@component('components.admin.noticeinfo')--}}
-            {{--@endcomponent--}}
-            {{--@component('components.admin.libraryinfo')--}}
-            {{--@endcomponent--}}
-            {{--@component('components.admin.communityinfo')--}}
-            {{--@endcomponent--}}
+            @component('components.admin.aboutus')
+            @endcomponent
+            @component('components.admin.pr')
+            @endcomponent
+            @component('components.admin.product')
+            @endcomponent
         </div>
         <div class="grid-item">
             @yield('content')

@@ -49,7 +49,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 5px;
+        margin:5vh 0 0 0;
+        font-size:0.7vw;
     }
 
     .table_footer a {
@@ -65,10 +66,11 @@
     .table_footer a:hover {
         text-decoration: none;
         color: grey;
+
     }
 
     .table_footer span > a {
-        padding: 0.7vw;
+        padding: 0.4vw;
         -webkit-border-radius: 0.5vw;
         -moz-border-radius: 0.5vw;
         border-radius: 0.5vw;

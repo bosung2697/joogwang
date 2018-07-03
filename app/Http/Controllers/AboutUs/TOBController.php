@@ -10,6 +10,6 @@ class TOBController extends Controller
     public function index()
     {
 
-        return view('intro.tob.index', compact('data'));
+        return view('user.intro.tob.index', compact('data'));
     }
 }

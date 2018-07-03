@@ -10,6 +10,6 @@ class RandDController extends Controller
     public function index()
     {
 
-        return view('Product.randd.index', compact('data'));
+        return view('user.Product.randd.index', compact('data'));
     }
 }

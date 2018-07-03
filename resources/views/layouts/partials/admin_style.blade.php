@@ -83,9 +83,9 @@
         display: grid;
         display: -ms-grid;
         grid-column-gap: 0;
-        -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
+        -ms-grid-columns: 1fr 0 1fr 0 1fr;
         text-align: center;
-        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+        grid-template-columns: 33.3% 33.3% 33.3%;
         font-size: 1vw;
         border: 1px solid #e1e1e1;
     }

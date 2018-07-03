@@ -13,11 +13,11 @@ class CreateAwardsTable extends Migration
      */
     public function up()
     {
-        Schema::create('Awards', function (Blueprint $table) {
+        Schema::create('awards', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('fileimage');
-            $table->string('awarded_date');
+            $table->date('awarded_date');
             $table->timestamps();
         });
     }

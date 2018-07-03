@@ -1,8 +1,8 @@
-@extends('layouts.admin')
+@extends('auth.admin.admin')
 @section('content')
     <div id='newsroom' class="infoput">
         <div class="container">
-            <h1 class="infoputheader"><strong>※ 공지사항</strong></h1>
+            <h1 class="infoputheader"><strong>※ 뉴스룸</strong></h1>
             <form id="newsroom-form" method="POST" action="{{route('admin.newsroom.store')}}" enctype="multipart/form-data">
                 {!!csrf_field()!!}
                 <div class="row">
@@ -20,9 +20,9 @@
                         </td>
                         </tr>
                         <tr>
-                            <td class="datainput"><label for="content">공지 내용</label></td>
+                            <td class="datainput"><label for="content">뉴스룸 내용</label></td>
                             <td>
-                                <textarea id="content" class="form-control" name="content" cols="70" placeholder="공지 내용을 입력해주세요.">{{ old('content')}}</textarea>
+                                <textarea id="content" class="form-control" name="content" cols="70" placeholder="뉴스룸 내용을 입력해주세요.">{{ old('content')}}</textarea>
                                 @if ($errors->has('content'))
                                     <div class="help-block">
                                         {{ $errors->first('content') }}
