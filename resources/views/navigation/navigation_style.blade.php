@@ -165,15 +165,15 @@
         color:#FF0000!important;
     }
     .pagination>li>a, .pagination>li>span {
-        position: relative;
-        float: left;
-        padding: 6px 12px;
-        margin-left: -1px;
-        line-height: 1.42857143;
-        color: #000000;
-        text-decoration: none;
-        background-color: #fff;
-        border: none;
+        position: relative!important;
+        float: left!important;
+        padding: 6px 12px!important;
+        margin-left: -1px!important;
+        line-height: 1.42857143!important;
+        color: #000000!important;
+        text-decoration: none!important;
+        background-color: #fff!important;
+        border: none!important;
     }
     .page-link:not(:disabled):not(.disabled) :hover{
         cursor: pointer;
@@ -200,5 +200,12 @@
 
     .page-item:first-child .page-link:hover{
         background-color:white!important;
+    }
+    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+        z-index: 3;
+        color: #000000;
+        cursor: pointer;
+        background-color: #ffffff!important;
+        border:none!important;
     }
 </style>

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <style>
-
         .pagination {
             justify-content: center!important;
             font-size: 2vw!important;
