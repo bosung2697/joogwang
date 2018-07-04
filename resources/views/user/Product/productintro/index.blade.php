@@ -39,7 +39,7 @@
             margin-bottom: 9vh;
         }
 
-        .product_list > .grid-item:nth-child(2), .product_list > .grid-item:nth-child(3), .product_list > .grid-item:nth-child(4), .product_list > .grid-item:nth-child(6), .product_list > .grid-item:nth-child(7), .product_list > .grid-item:nth-child(8)
+        .product_list > .grid-item:nth-child(2), .product_list > .grid-item:nth-child(3), .product_list > .grid-item:nth-child(4), .product_list > .grid-item:nth-child(6), .product_list > .grid-item:nth-child(7), .product_list > .grid-item:nth-child(8),
         .product_list > .grid-item:nth-child(10), .product_list > .grid-item:nth-child(11), .product_list > .grid-item:nth-child(12){
             border-left: 1px dashed;
         }
