@@ -101,7 +101,7 @@
 
         .p_o_b img {
             width: 100%;
-            height: 12vh;
+            height: 19vh;
         }
 
         .p_o_b_desc table {

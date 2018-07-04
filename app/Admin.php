@@ -56,6 +56,10 @@ class Admin extends Authenticatable
     {
         return $this->hasmany(Awards::class);
     }
+    public function ventureawards()
+    {
+        return $this->hasmany(VentureAwards::class);
+    }
     public function equipment()
     {
         return $this->hasmany(Equipment::class);

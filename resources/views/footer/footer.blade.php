@@ -36,7 +36,7 @@
     </div>
     <div class="footer_child">
         <div class="grid-item" style="cursor:pointer;" onclick="location.href='{{url('/awards')}}'">수상실적</div>
-        <div class="grid-item">인증수상</div>
+        <div class="grid-item"style="cursor:pointer;" onclick="location.href='{{url('/ventureawards')}}'">인증수상</div>
         <div class="grid-item">채용절차</div>
         <div class="grid-item">공지사항</div>
         <div class="grid-item"></div>

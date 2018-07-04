@@ -41,7 +41,7 @@
         }
 
         .newsroom_detailed_table_content {
-            width: 100%;
+            width: 80%;
             padding: 3vw;
         }
     </style>

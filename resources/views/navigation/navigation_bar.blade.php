@@ -62,7 +62,7 @@
             <div onclick="location.href='{{url('/equipment')}}'">
                 보유장비
             </div>
-            <div>
+            <div onclick="location.href='{{url('/ventureawards')}}'">
                 인증수상
             </div>
             <div>
