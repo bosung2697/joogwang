@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('style')
+@section('content')
     <style>
 
         .pagination {
@@ -123,8 +123,6 @@
             justify-content:center;
         }
     </style>
-@endsection
-@section('content')
 
     <div class="container">
         <div class="ceoheader">
