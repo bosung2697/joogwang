@@ -1,6 +1,60 @@
 @extends('layouts.app')
-@section('content')
+@section('style')
     <style>
+
+        .pagination {
+            justify-content: center!important;
+            font-size: 2vw!important;
+            font-weight:500!important;
+            color:black!important;
+        }
+        .page-item.active .page-link {
+            z-index: 1;
+            color: #ff0000;
+            background-color: white!important;
+            border: none!important;
+        }
+        .page-item.active .page-link:hover{
+            background-color:white!important;
+            color:#FF0000!important;
+        }
+        .pagination>li>a, .pagination>li>span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #000000;
+            text-decoration: none;
+            background-color: #fff;
+            border: none;
+        }
+        .page-link:not(:disabled):not(.disabled) :hover{
+            cursor: pointer;
+            background-color:white!important;
+            color:#000000!important;
+        }
+        .page-link:not(:disabled):not(.disabled){
+            cursor: pointer;
+            background-color:white!important;
+        }
+        .page-item:last-child .page-link {
+            margin-left: 8vw!important;
+            background-color:white!important;
+        }
+
+        .page-item:last-child .page-link :hover{
+            background-color:white!important;
+        }
+
+        .page-item:first-child .page-link{
+            margin-right:8vw!important;
+            background-color:white!important;
+        }
+
+        .page-item:first-child .page-link:hover{
+            background-color:white!important;
+        }
         .ceoheader {
             margin: 4vh 1vw;
         }
@@ -65,10 +119,12 @@
             width: 13vw;
             height: 32vh;
         }
-     .pagination{
-         justify-content:center;
-     }
+        .pagination{
+            justify-content:center;
+        }
     </style>
+@endsection
+@section('content')
 
     <div class="container">
         <div class="ceoheader">
