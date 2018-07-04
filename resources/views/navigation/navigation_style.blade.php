@@ -155,8 +155,8 @@
         color:black!important;
     }
     .page-item.active .page-link {
-        z-index: 1;
-        color: #ff0000;
+        z-index: 1!important;
+        color: #ff0000!important;
         background-color: white!important;
         border: none!important;
     }
@@ -201,11 +201,14 @@
     .page-item:first-child .page-link:hover{
         background-color:white!important;
     }
-    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span:focus, .pagination>.active>span:hover {
         z-index: 3;
         color: #000000;
         cursor: pointer;
         background-color: #ffffff!important;
         border:none!important;
+    }
+    .pagination>.active>span{
+        color:#FF0000;
     }
 </style>
