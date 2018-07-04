@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
             DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
         }
+
         $this->call(RoleTableSeeder::class);
         // $this->call(UsersTableSeeder::class);
         $this->call(AdminTableSeeder::class);
-        $this->call(AwardsTableSeeder::class);
+//        $this->call(AwardsTableSeeder::class);
         if (config('database.default') !== 'sqlite') {
             DB::statement('SET FOREIGN_KEY_CHECKS=1');
         }

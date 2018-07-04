@@ -149,20 +149,20 @@
     }
 
     .pagination {
-        justify-content: center;
-        font-size: 2vw;
-        font-weight:500;
-        color:black;
+        justify-content: center!important;
+        font-size: 2vw!important;
+        font-weight:500!important;
+        color:black!important;
     }
     .page-item.active .page-link {
         z-index: 1;
         color: #ff0000;
-        background-color: white;
-        border: none;
+        background-color: white!important;
+        border: none!important;
     }
     .page-item.active .page-link:hover{
-        background-color:white;
-        color:#FF0000;
+        background-color:white!important;
+        color:#FF0000!important;
     }
     .pagination>li>a, .pagination>li>span {
         position: relative;
@@ -177,28 +177,28 @@
     }
     .page-link:not(:disabled):not(.disabled) :hover{
         cursor: pointer;
-        background-color:white;
-        color:#000000;
+        background-color:white!important;
+        color:#000000!important;
     }
     .page-link:not(:disabled):not(.disabled){
         cursor: pointer;
-        background-color:white;
+        background-color:white!important;
     }
     .page-item:last-child .page-link {
-        margin-left: 8vw;
-        background-color:white;
+        margin-left: 8vw!important;
+        background-color:white!important;
     }
 
     .page-item:last-child .page-link :hover{
-        background-color:white;
+        background-color:white!important;
     }
 
     .page-item:first-child .page-link{
-        margin-right:8vw;
-        background-color:white;
+        margin-right:8vw!important;
+        background-color:white!important;
     }
 
     .page-item:first-child .page-link:hover{
-        background-color:white;
+        background-color:white!important;
     }
 </style>
