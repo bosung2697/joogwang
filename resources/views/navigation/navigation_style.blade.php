@@ -167,10 +167,10 @@
     .pagination>li>a, .pagination>li>span {
         position: relative!important;
         float: left!important;
-        padding: 6px 12px!important;
-        margin-left: -1px!important;
+        padding: 6px 12px;
+        margin-left: -1px;
         line-height: 1.42857143!important;
-        color: #000000!important;
+        color: #000000;
         text-decoration: none!important;
         background-color: #fff!important;
         border: none!important;
