@@ -43,6 +43,7 @@
         .newsroom_detailed_table_content {
             width: 80%;
             padding: 3vw;
+            margin:auto;
         }
     </style>
     <div class="container">
@@ -74,7 +75,7 @@
                     <tr>
                         <td>
                             <div>
-                                <p style="padding:1vh 6vw; font-size:1vw;">{{$data->content}}</p>
+                                <p style="padding:3vh 1vw; font-size:1vw;">{{$data->content}}</p>
                             </div>
                         </td>
                     </tr>
