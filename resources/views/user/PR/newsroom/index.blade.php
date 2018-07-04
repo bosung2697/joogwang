@@ -23,43 +23,50 @@
             text-align: right;
         }
 
-        .pagecontents{
-            font-size:1vw;
-            color:black;
+        .pagecontents {
+            font-size: 1vw;
+            color: black;
             border-collapse: collapse;
             border-bottom: 0.5px solid;
-            width:90%;
-            margin:auto;
+            width: 90%;
+            margin: auto;
         }
-        .pagecontents th, .pagecontents td{
-            padding:1vw;
+
+        .pagecontents th, .pagecontents td {
+            padding: 1vw;
         }
-        .pagecontents th{
-            text-align:center;
+
+        .pagecontents th {
+            text-align: center;
         }
-        .table_title{
+
+        .table_title {
             background-color: #eef1f8;
             border: 0.5px solid;
-            width:83%;
+            width: 83%;
         }
-        .table_id{
-            width:6%;
+
+        .table_id {
+            width: 6%;
             background-color: #f7f8fc;
         }
-        .table_date{
-            width:11%;
+
+        .table_date {
+            width: 11%;
             background-color: #f7f8fc;
         }
-        .tothedetailpage{
-            background-color:white;
-            font-size:1vw;
-            color:black;
-            cursor:pointer;
-            text-align:center;
+
+        .tothedetailpage {
+            background-color: white;
+            font-size: 1vw;
+            color: black;
+            cursor: pointer;
+            text-align: center;
         }
-        .tothedetailpage>.td1:nth-child(2){
-            text-align:left;
-            padding:1vw 3vw;
+
+        .tothedetailpage > .td1:nth-child(2) {
+            text-align: left;
+            padding: 1vw 3vw;
         }
     </style>
 
@@ -67,7 +74,7 @@
         <div class="ceoheader">
             <div><a href={{url('/')}}>Home</a>><a href="{{url('/newsroom')}}">PR</a>><a
                         href="{{url('/newsroom')}}">뉴스룸</a></div>
-            <hr width="3.6%;" align="left"; style="border:thin solid #667ebc; margin: 0;">
+            <hr width="3.6%;" align="left" ; style="border:thin solid #667ebc; margin: 0;">
             <div class="header">뉴스룸</div>
         </div>
         <div>
@@ -87,7 +94,7 @@
                     </tr>
                 @empty
                     <tr>
-                    <td colspan="3" style="text-align:center;">등록된 공지사항이 없습니다.</td>
+                        <td colspan="3" style="text-align:center;">등록된 공지사항이 없습니다.</td>
                     </tr>
                 @endforelse
             </table>

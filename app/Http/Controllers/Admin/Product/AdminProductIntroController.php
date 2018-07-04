@@ -54,8 +54,7 @@ class AdminProductIntroController extends Controller
 
         $this->validate($request, [
             'title' => 'required',
-            'fileimage' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'content' => 'required',
+            'fileimage' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         if ($request->hasFile('fileimage')) {
             if (!file_exists('fileuploaded')) {
@@ -87,7 +86,6 @@ class AdminProductIntroController extends Controller
         $data = ProductIntro::where('id', $id)
             ->update([
                 'title' => $request['title'],
-                'content' => $request['content'],
                 'fileimage' => $file,
                 'date' => $date,
 
@@ -109,8 +107,7 @@ class AdminProductIntroController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
-            'fileimage' => 'nullable|max:10000|mimes:gif,jpeg,jpg,png,txt,xlsx,xls,ppt,pptx,doc,docx,pdf',
-            'content' => 'required',
+            'fileimage' => 'required|max:10000|mimes:gif,jpeg,jpg,png,txt,xlsx,xls,ppt,pptx,doc,docx,pdf',
         ]);
         $upload = new ProductIntro;
         if ($request->hasFile('fileimage')) {
@@ -137,7 +134,6 @@ class AdminProductIntroController extends Controller
         $date = Carbon::now();
 
         $upload->title = $request['title'];
-        $upload->content = $request['content'];
         $upload->date=$date;
 
 

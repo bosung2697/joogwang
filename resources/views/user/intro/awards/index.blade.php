@@ -90,10 +90,10 @@
                 </div>
             @empty
                 <div class="grid-item">
-                    <img src="/img/reward1.png">
+                    <img src="/img/no_image.jpg">
                     <div>
                         <div class="date">2016</div>
-                        <div class="title">53회 무역의 날 천만 불 수출의 탑</div>
+                        <div class="title">테스팅</div>
                     </div>
                 </div>
             @endforelse

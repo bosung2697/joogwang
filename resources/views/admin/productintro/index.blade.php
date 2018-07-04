@@ -12,10 +12,14 @@
             font-weight: lighter;
             text-decoration: none;
         }
+
     </style>
     <div class="askingpage">
         <div style="display:flex; justify-content: space-between; align-items: center;"><h3>제품소개 목록</h3>
-            <div style="cursor:pointer; border:2px solid #e85254; background-color: #e85254; color:white; padding:0.5vw; font-size:1vw; -webkit-border-radius: 1vw;-moz-border-radius: 1vw;border-radius: 1vw;"onclick="location.href='{{url('/admin/productintro/create')}}'">제품소개 추가</div></div>
+            <div style="cursor:pointer; border:2px solid #e85254; background-color: #e85254; color:white; padding:0.5vw; font-size:1vw; -webkit-border-radius: 1vw;-moz-border-radius: 1vw;border-radius: 1vw;"
+                 onclick="location.href='{{url('/admin/productintro/create')}}'">제품소개 추가
+            </div>
+        </div>
         <hr/>
         <div>
             <table class="pagecontents">
@@ -23,7 +27,7 @@
                 <tr>
                     <th class="th1 table_id"></th>
                     <th class="th1 table_title">제목</th>
-                    <th class="th2 table_date">제품소개 내용</th>
+                    <th class="th2 table_date">제품소개 사진</th>
                     <th class="th2 table_date">제품소개 생성일</th>
                     <th class="th2 table_date">제품소개 수정일</th>
                     <th class="th2"></th>
@@ -35,9 +39,9 @@
                         onclick="location.href='{{ url('admin/productintro/'.$value->id.'/edit') }}'">
                         <td class="td1">{{$value->id}}</td>
                         <td class="td1">{{$value->title}}</td>
-                        <td class="td1">{{$value->content}}</td>
-                        <td class="td1">{{ $value->created_at }}</td>
-                        <td class="td1">{{ $value->date }}</td>
+                        <td class="td1">{{$value->fileimage}}</td>
+                        <td class="td1">{{$value->created_at}}</td>
+                        <td class="td1">{{$value->date}}</td>
                         <td class="td1" onclick="deleting({{ $value->id }})">
                             <button class="btn btn-delete">삭제하기</button>
                         </td>

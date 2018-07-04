@@ -50,22 +50,11 @@
                         <tr>
                             <td class="datainput"><label for="content">제품소개 내용</label></td>
                             <td>
-                                <textarea id="content" class="form-control" name="content" cols="70" placeholder="제품소개 내용을 입력해주세요.">{{ old('content',$data->content)}}</textarea>
+                                <textarea id="content" class="form-control" name="content" cols="70"
+                                          placeholder="제품소개 내용을 입력해주세요.">{{ old('content',$data->content)}}</textarea>
                                 @if ($errors->has('content'))
                                     <div class="help-block">
                                         {{ $errors->first('content') }}
-                                    </div>
-                                @endif
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="datainput"><label for="fileimage">파일 첨부</label></td>
-                            <td>
-                                <input type="file" id="fileimage" name="fileimage" class="image"
-                                       value="{{ old('fileimage',$data->fileimage) }}">
-                                @if ($errors->has('fileimage'))
-                                    <div class="help-block">
-                                        {{ $errors->first('fileimage') }}
                                     </div>
                                 @endif
                             </td>
